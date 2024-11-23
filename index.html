@@ -32,7 +32,7 @@
       right: 0px;
       top: 0px;
       height: 130px;
-      background: #404040;  /* Header blue background */
+      background: #2C5D88;  /* Header blue background */
       text-align: center;   /* Project title in header centered, for left-align, change to "left" */
       vertical-align: top;  
       }
@@ -71,7 +71,7 @@
       width: 100%;
       top: 70px;
       bottom: 0;     
-      border-top: thin solid #C0C0C0; 
+      border-top: thin solid #95B3CA; 
     }
 	#hmcontentwrapper {
 	  position: absolute;
@@ -96,7 +96,7 @@
 		cursor: default;
 	}
     #navbar a:hover {
-      background:url('hm_webhelp_buttons_yellow.png') top left no-repeat;
+      background:url('hm_webhelp_buttons_orange.png') top left no-repeat;
       opacity: 1;
     }
 	#navbar a.current:hover {
@@ -330,7 +330,7 @@
 
   <div id="hmcontentbox" >
     <script type="text/javascript">
-      var defaulttopic="introduction.html";
+      var defaulttopic="welcome.html";
       var query = window.location.search.substring(1).split('&')[0], hash = window.location.hash, xssTest=/^[a-z0-9$._~-]{3,}$/i, cntxRX = /contextid=\d{3,10}/, cntxMatch = cntxRX.exec(query), cntxSrc = "";
       if (query != "") {
         if (typeof(hmGetContextId) != "undefined") {
@@ -348,7 +348,7 @@
       document.write('<iframe name="hmcontent" id="hmcontent" src="'+defaulttopic+'" seamless="seamless" title="Content Page" frameborder="0"></iframe>');
     </script>
     <noscript>
-      <iframe name="hmcontent" id="hmcontent" src="introduction.html" seamless="seamless" title="Content Page" frameborder="0"></iframe>
+      <iframe name="hmcontent" id="hmcontent" src="welcome.html" seamless="seamless" title="Content Page" frameborder="0"></iframe>
     </noscript>
   </div>
   </div>
